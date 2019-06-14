@@ -28,6 +28,13 @@ body {
 .movie p {
     padding-left: 10px;
     width: 400px;
+    font-size: 18px;
+}
+
+.changed {
+    border: 3px solid darkorange;
+    background-color: darkorange;
+    color: white;
 }
 
 * {
