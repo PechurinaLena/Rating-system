@@ -36,16 +36,25 @@ body {
 
 .rating {
     display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rating-item::before {
+    content: ' ★ ';
+    font-size: 35px;
+    position: relative;
+    top: -9px;
+    right: -3px;
 }
 
 .rating-item {
     width: 40px;
     height: 40px;
-    background-color: green;
     border: 2px solid #fff;
     cursor: pointer;
 }
 
-.rating-item.active {
-    background-color: yellow;
+.rating-item.active, .rating-item.active~*, .rating-item:hover, .rating-item:hover~* {
+    color: yellow;
 }
