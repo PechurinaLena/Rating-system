@@ -31,6 +31,10 @@ body {
     font-size: 18px;
 }
 
+.movie:hover {
+    color: red;
+}
+
 .changed {
     border: 3px solid darkorange;
     background-color: darkorange;
